@@ -9,6 +9,6 @@ print(b)
 
 
 for elem in strr:
-	print(elem.split())
+	print(elem)
 	res = [int(i) for i in elem if i.isdigit()] 
 	print(res)
