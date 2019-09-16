@@ -1,13 +1,14 @@
-strr = ["Msrit","sounds","cooler","than","Rit"]
-li= [i for i in strr if strr.index(i)%2==0 ]
-print(*li,sep = ' ')
+strr = ["Msrit","sounds","cooler","than","Rit","heyvishwa123"]
+print(strr[::2])
 
-b=[strr[x].upper() for x in range(1,len(strr)) if x%3==0]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+b=[strr[x].upper() for x in range(1,len(strr)) if (x+1)%3==0]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 li2= [i[::-1] for i in strr]
-
 print(*li2,sep = ' ')
-
-
-
 print(b) 
+
+
+for elem in strr:
+	print(elem.split())
+	res = [int(i) for i in elem if i.isdigit()] 
+	print(res)
