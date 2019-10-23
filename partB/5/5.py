@@ -1,5 +1,6 @@
 import sys
 from functools import reduce
+from collections import Counter
 
 f=open(sys.argv[1])
 #make a text file say counting.txt(in same location)
@@ -8,12 +9,8 @@ contents=f.read().split()
 print("\nfile Contents:")
 
 print(*contents,sep=' ')
-count_dict={}
-for word in contents:
-    if word in count_dict:
-        count_dict[word]=count_dict[word]+1
-    else:
-        count_dict[word]=1
+
+count_dict = Counter(contents)
 print("\n\n",count_dict)
 print("\n10 Words in decreasing order of occurance:")
 
