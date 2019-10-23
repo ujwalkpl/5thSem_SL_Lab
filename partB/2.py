@@ -1,3 +1,4 @@
+tuplelist = []
 def celcius_to_fahrenheit():
     celsius = int(input("Enter temperature in celcius"));
     fahrenheit = 9/5*celsius+32;
@@ -48,4 +49,7 @@ while(choice!=7):
         celsius_to_kelvin()
     elif(choice==5):
         fahrenheit_to_kelvin()
-    
+    elif(choice==6):
+        kelvin_to_fahrenheit()
+print(tuplelist)
+print("Thank you")

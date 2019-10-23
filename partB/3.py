@@ -5,6 +5,7 @@ class reverse_string:
     def reverse(self):
         return(' '.join(self.strr.split()[::-1]))
 
+
 def vowel_count(strr):
     return sum(st in vowels for st in strr.lower())
 
