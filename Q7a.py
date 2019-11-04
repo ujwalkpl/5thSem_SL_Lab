@@ -1,4 +1,4 @@
-def AtomicDictionary():
+ def AtomicDictionary():
 	dicti={"sodium":"Na","Hydrogen":"H","Helium":"He","Nitrogen":"N","Lithium":"Li","Boron":"B"}
 	print(dicti)
 	key=input("Enter a new element")
