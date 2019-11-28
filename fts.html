@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Author name and story title</h1>
+  <table border>
+    <th>Name</th>
+    <th>Story Title</th>
+    <tr>
+      <td id="author0"></td>
+      <td id="title0"></td>
+    </tr>
+    <tr>
+      <td id="author1"></td>
+      <td id="title1"></td>
+    </tr>
+  </table>
+  <p id="author2"></p>
+  <p id="author3"></p>
+</table>
+<body>
+</html>
+
+<script>
+  var x ={"ujwal":"sheir","vaib":"hero","uzma":"jsah","hari":"shades"}
+  document.getElementById("author0").innerHTML = Object.keys(x)[0]
+  document.getElementById("title0").innerHTML = Object.values(x)[0]
+  document.getElementById("author1").innerHTML = Object.keys(x)[1]
+  document.getElementById("title1").innerHTML = Object.values(x)[1]
+  document.getElementById("author2").innerHTML = Object.keys(x)[2]
+  document.getElementById("author3").innerHTML = Object.keys(x)[3]
+</script>
+
