@@ -23,6 +23,4 @@ print("Avg: ",avg)
 
 sq_odd=[i*i for i in wordlen if i%2!=0]
 
-
-
 print("Square of odd numbers: \n",sq_odd)

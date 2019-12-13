@@ -3,34 +3,50 @@ var for1 = document.getElementById("form1")
 var sum = 0
 
 function grade_cal(num){
+    cgpalis = [];
 	var grade = ""
-	if(num>90)
+	if(num>90){
 	grade="Grade S+"
-	else if(num>80)
+	cgpalis.append(10)
+	}
+	else if(num>80){
 	grade="Grade S"
-	else if(num>70)
+	cgpalis.append(9)
+	}
+	else if(num>70){
 	grade = "Grade A"
-	else if(num>60)
+	cgpalis.append(8)
+	}
+	else if(num>60){
 	grade = "Grade B"
-	else if(num>50)
+	cgpalis.append(7)
+	}
+	else if(num>50){
 	grade = "Grade C"
-	else if(num>40)
+	cgpalis.append(6)
+	}
+	else if(num>40){
 	grade = "Grade D"
-	else
+	cgpalis.append(5)
+	}
+	else {
 	grade ="Grade F"
+	cgpalis.append(0)
+	}
 	return grade
 	}
 
 
 for(var i = 0 ;i<for1.length;i++){
 document.getElementById("grad"+i).innerHTML = grade_cal(for1[i].value)
-console.log(grade_cal(for1[i].value)) 
-
-
 sum= sum+parseInt(for1[i].value);
 }
+
+cgpa1= sum(cgpalis)/length(cgpalis);
+
 document.getElementById("result").innerHTML = sum
 document.getElementById("grade").innerHTML = grade_cal(sum)
+document.getElementById("cgpa").innerHTML = cgpa1
 
 
 }

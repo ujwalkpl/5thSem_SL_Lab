@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>YOukar</title>
+
 </head>
 <body>
-$END$
+<table border>
+<th>Name</th>
+<th>Story Title</th>
+    <tr>
+   <td id="name0"></td>
+ <td id="title0"></td>
+    </tr>
+    <tr>
+        <td id="name1"></td>
+        <td id="title1"></td>
+    </tr>
+
+</table>
+<p id="name2"></p> <p id="title2"></p>
+<p id="name3"></p> <p id="title3"></p>
+
 </body>
+<script>
+    var obj=[{"name":"Ujwal","title":"bahubali"},{"name":"raj","title":"soeh"},{"name":"waht","title":"noway"},{"name":"venkat","title":"yes"}]
+    var i
+    for(i=0;i<4;i++){
+    document.getElementById("name"+i).innerHTML=Object.values(obj)[i].name
+    document.getElementById("title"+i).innerHTML=Object.values(obj)[i].title
+    }
+
+</script>
 </html>
