@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border>
+        <th>name</th>
+        <th>native country</th>
+        <th> story title </th>
+        <th>publication year<</th>
+        <tr>
+            <td id = "name1"></td>
+            <td id ="native1"></td>
+            <td id = "story1"></td>
+            <td id = "publication1"></td>
+
+        </tr>
+        <tr>
+                <td id = "name2"></td>
+                <td id ="native2"></td>
+                <td id = "story2"></td>
+                <td id = "publication2"></td>
+        </tr>
+    </table>
+    <span id = "name3"></span>
+    <span id = "native3"></span>
+    <span id = "story3"> </span>
+    <span id = "publication3"></span>
+    <br>
+    <span id = "name4"></span>
+    <span id = "native4"></span>
+    <span id = "story4"> </span>
+    <span id = "publication4"></span>
+
+</body>
+<script>
+    var obj = [{
+        name:"Raj",
+        native:"IND",
+        story:"Last Leaf",
+        pub:2002
+    },
+    {
+        name:"Ram",
+        native:"AUS",
+        story:"Last",
+        pub:2009
+    },
+    {
+        name:"Messi",
+        native:"ARG",
+        story:"Barca",
+        pub:2007
+    },
+    {
+        name:"Tom",
+        native:"NZ",
+        story:"Run",
+        pub:2008
+    }]
+    var i;
+    for(i=0;i<4;i++){
+    document.getElementById("name"+(i+1)).innerHTML=obj[i].name
+    document.getElementById("native"+(i+1)).innerHTML=obj[i].native
+    document.getElementById("story"+(i+1)).innerHTML=obj[i].story
+    document.getElementById("publication"+(i+1)).innerHTML=obj[i].pub
+    }
+</script>
+</html>

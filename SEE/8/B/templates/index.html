@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    {{ msg }}
+    <form method="POST">
+        <input type="text" name = "usn" id = "usn">
+        <input type = "date" name = "date" id = "date">
+        <input type="number" name = "marks1" id = "marks1">
+        <input type="number" name="marks2" id="marks2">
+        <input type="number" name="marks3" id="marks3">
+        <input type = "submit" value="Submit" onclick="return validate()">
+    </form>
+</body>
+<script>
+    
+    function validate(){
+        
+        var usn = document.getElementById("usn").value
+        var date = document.getElementById("date").value
+        var marks1 = document.getElementById("marks1").value
+        var marks3 = document.getElementById("marks2").value
+        var marks3= document.getElementById("marks3").value
+        if(marks1==""||usn==""||date == ""|| marks2 == ""||marks3==""){
+            console.log("ho")
+            alert("Fill all fields")
+            return false
+        }
+        return true
+    }
+</script>
+</html>
