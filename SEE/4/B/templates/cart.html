@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-     <table border>  total amount is {{ total }}
+     <table border="1">  total amount is {{ total }}
     <th>item</th>
     <th>quantity</th>
     <th>price</th>
 
     
-    {% for item in {{ cart }} %}
+    {% for item in cart %}
     <tr>
         <td>{{item["name"]}}</td>
         <td>{{item["amount"]}}</td>
@@ -22,6 +22,6 @@
     {% endfor %}
 </table> 
 <h3> The total cart price is : {{ total }}</h3>
-<a href = "{{url_for('store')}}">Go back to store</a>
+<a href = "{{url_for('index')}}">Go back to store</a>
 </body>
 </html>
