@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="POST">
+    Shirt(100 Rs)    <input type="number" name="shirt" >
+    Pant(200 Rs)    <input type="number" name="pants" >
+    Socks(150 Rs)    <input type="number" name = "socks">
+    <input type="submit" value = "Add to cart">
+    </form>
+    <a href = "{{url_for('cart')}}">View your shopping cart</a>
+</body>
+</html>
