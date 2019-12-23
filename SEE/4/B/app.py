@@ -6,7 +6,7 @@ def index():
     if request.method =="GET":
         return render_template('index.html')
     if request.method == "POST":
-        for item in ["shirt","pant","socks"]:
+        for item in ["shirt","pants","socks"]:
             if item not in session:
                 session[item] = int(request.form[item])
             else:
