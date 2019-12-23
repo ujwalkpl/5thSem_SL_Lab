@@ -12,7 +12,7 @@ def index():
             else:
                 session[item]=int(session[item])+int(request.form[item])
 
-        return render_template('index.html')
+        return redirect(url_for('cart'))
 @app.route('/cart')
 def cart():
     cart = []
